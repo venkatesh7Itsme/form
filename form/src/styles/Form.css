@@ -1,0 +1,265 @@
+.form-container {
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  border-top: 5px solid #6a11cb;
+}
+
+.form-title {
+  margin-bottom: 2.5rem;
+  color: #2d3748;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+  padding-bottom: 15px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.form-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 4px;
+}
+
+.form-row {
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.input-field {
+  transition: all 0.3s ease !important;
+}
+
+.input-field .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.first-name .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.first-name .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #e53e3e;
+}
+.first-name .MuiInputLabel-root.Mui-focused {
+  color: #e53e3e;
+}
+
+.last-name .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline, 
+.last-name .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #dd6b20;
+}
+.last-name .MuiInputLabel-root.Mui-focused {
+  color: #dd6b20;
+}
+
+.phone .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.phone .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #38a169;
+}
+.phone .MuiInputLabel-root.Mui-focused {
+  color: #38a169;
+}
+
+.email .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.email .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #3182ce;
+}
+.email .MuiInputLabel-root.Mui-focused {
+  color: #3182ce;
+}
+
+.dob .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.dob .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #6b46c1;
+}
+.dob .MuiInputLabel-root.Mui-focused {
+  color: #6b46c1;
+}
+
+.work-experience-section {
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  background: linear-gradient(145deg, #ffffff, #f5f7fa);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  border-left: 6px solid #2575fc;
+  position: relative;
+  overflow: hidden;
+}
+
+.work-experience-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, transparent 70%, rgba(37, 117, 252, 0.1) 100%);
+  border-radius: 0 0 0 100px;
+}
+
+.section-title {
+  margin-bottom: 1.8rem;
+  color: #1a365d;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background: #2575fc;
+  border-radius: 3px;
+}
+
+.experience-row {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px dashed rgba(37, 117, 252, 0.15);
+  transition: all 0.3s ease;
+}
+
+.experience-row:hover {
+  transform: translateY(-3px);
+}
+
+.experience-row:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.experience-field.company .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.experience-field.company .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #805ad5;
+}
+.experience-field.company .MuiInputLabel-root.Mui-focused {
+  color: #805ad5;
+}
+
+.experience-field.role .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.experience-field.role .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #d53f8c;
+}
+.experience-field.role .MuiInputLabel-root.Mui-focused {
+  color: #d53f8c;
+}
+
+.experience-field.years .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline,
+.experience-field.years .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #4299e1;
+}
+.experience-field.years .MuiInputLabel-root.Mui-focused {
+  color: #4299e1;
+}
+
+.experience-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+}
+
+.icon-button {
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.add-button {
+  background-color: rgba(56, 161, 105, 0.1);
+  color: #38a169;
+}
+
+.add-button:hover {
+  background-color: rgba(56, 161, 105, 0.2);
+  transform: scale(1.1);
+}
+
+.remove-button {
+  background-color: rgba(229, 62, 62, 0.1);
+  color: #e53e3e;
+}
+
+.remove-button:hover:not(:disabled) {
+  background-color: rgba(229, 62, 62, 0.2);
+  transform: scale(1.1);
+}
+
+.remove-button:disabled {
+  color: #cbd5e0;
+  background-color: #f7fafc;
+}
+
+.submit-container {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  padding: 0.8rem 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.4);
+}
+
+.submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 20px rgba(106, 17, 203, 0.5);
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+  
+  .work-experience-section {
+    padding: 1.5rem;
+  }
+  
+  .experience-row .MuiGrid-container {
+    flex-direction: column;
+  }
+  
+  .experience-row .MuiGrid-item {
+    width: 100%;
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  
+  .experience-buttons {
+    margin-top: 1rem;
+    justify-content: flex-end;
+  }
+}
+
+/* Animation for focus */
+@keyframes focusPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 117, 252, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(37, 117, 252, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 117, 252, 0);
+  }
+}
+
+.MuiOutlinedInput-root.Mui-focused {
+  animation: focusPulse 1.5s infinite;
+}
